@@ -12,9 +12,11 @@ social:
     url: mailto:atharvgups@gmail.com
   - title: spotify
     url: https://open.spotify.com/user/5s6cocuc2wi8541o0skac5rf6
-  - title: unsplash
+  - title: articles
+    url: https://medium.com/@atharvgups
+  - title: pics
     url: https://unsplash.com/@atharvgups
-  - title: github
+  - title: coding
     url: https://github.com/atharvgups
     
 # Build settings
