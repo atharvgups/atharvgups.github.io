@@ -2,13 +2,13 @@
 name: Atharv Gupta
 title: Atharv Gupta — Builder, Founder & Aspiring AI Entrepreneur
 description: Atharv Gupta is a high school senior and founder building at the intersection of AI, entrepreneurship, and people — Hack Club president, maker, and aspiring B2B sales leader.
-url: https://atharvgups.github.io/
+url: https://atharvgups.github.io
 baseurl: ''
 email: atharvgups@gmail.com
 linkedin: https://www.linkedin.com/in/gupta-atharv/
 github: https://github.com/atharvgups
 cover: https://atharvgups.github.io/img/og.png
-logo: https://atharvgups.github.io/img/logo.png
+logo: /img/favicon.svg
 social:
   - title: email
     url: mailto:atharvgups@gmail.com
@@ -35,6 +35,6 @@ keep_files:
   - '.git'
   - '.gitignore'
 
-plugins_dir:
+plugins:
   - jekyll-minifier
   - jekyll-sitemap

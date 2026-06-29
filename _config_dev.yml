@@ -7,8 +7,8 @@ baseurl: ''
 email: atharvgups@gmail.com
 linkedin: https://www.linkedin.com/in/gupta-atharv/
 github: https://github.com/atharvgups
-cover: https://atharvgups.github.io/img/og.png
-logo: https://atharvgups.github.io/img/logo.png
+cover: http://localhost:3000/img/og.png
+logo: /img/favicon.svg
 social:
   - title: email
     url: mailto:atharvgups@gmail.com
@@ -35,6 +35,5 @@ keep_files:
   - '.git'
   - '.gitignore'
 
-plugins_dir:
-  - jekyll-minifier
+plugins:
   - jekyll-sitemap
