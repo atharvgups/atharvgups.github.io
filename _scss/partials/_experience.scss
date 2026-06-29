@@ -1,32 +1,86 @@
-.experience {
-  .jobs {
-    margin-bottom: 100px;
+.timeline {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 5px;
+    width: 2px;
+    background: linear-gradient(var(--accent), transparent);
   }
-  .job {
-    margin-bottom: 25px;
-    .time-place {
-      display: flex;
-      justify-content: space-between;
-      @include mobile {
-        display: block;
-      }
-    }
-    &__company {
-      font-weight: 700;
-    }
-    &__time {
-      font-size: 0.9rem;
-      font-family: 'Inconsolata', monospace;
-      @include mobile {
-        font-size: 0.8rem;
-      }
-    }
+  @include mobile { padding-left: 22px; }
+}
+
+.tl-item {
+  position: relative;
+  padding-bottom: 38px;
+  &:last-child { padding-bottom: 0; }
+
+  &__marker {
+    position: absolute;
+    left: -30px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 5px var(--accent-soft);
+    @include mobile { left: -22px; }
   }
-  .arrow-link {
-    font-size: 1.25rem;
-    &:after {
-      width: 20px;
-      height: 20px;
+
+  &__body {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    @include ease(all, 0.22s);
+    &:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow);
+    }
+    @include mobile { padding: 18px 18px; }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 12px;
+    @include phablet { flex-direction: column; gap: 2px; }
+  }
+
+  &__role {
+    font-size: 1.16rem;
+    font-weight: 600;
+  }
+  &__at { color: var(--accent); font-weight: 500; }
+
+  &__time {
+    font-family: $font-mono;
+    font-size: 0.82rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  &__points {
+    li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.98rem;
+      &:last-child { margin-bottom: 0; }
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+      }
     }
   }
 }

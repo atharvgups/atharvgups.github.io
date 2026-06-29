@@ -1,0 +1,35 @@
+- name: Plant Care Automation
+  tag: IoT · Raspberry Pi
+  description: A Raspberry Pi–powered system that monitors soil moisture and automates plant care, built end to end in Python. Turned a real-world chore into a hands-on lesson in sensors, control loops, and embedded automation.
+  used:
+    - thing: Python
+    - thing: Raspberry Pi
+    - thing: Sensors
+    - thing: Automation
+
+- name: Image Recognition Models
+  tag: Machine Learning
+  description: Built image-classification models during an intensive AI bootcamp, working through supervised and unsupervised learning, data preprocessing, and visualization to ship small but functional ML projects.
+  used:
+    - thing: Python
+    - thing: PyTorch
+    - thing: TensorFlow
+    - thing: Pandas
+    - thing: NumPy
+
+- name: Adaptive Toys for Accessibility
+  tag: 3D Printing · Hardware
+  description: Designed and 3D-printed custom adaptations that make toys usable for children with disabilities — modeled in Fusion 360 and TinkerCad, then donated to local schools with live demos.
+  used:
+    - thing: Fusion 360
+    - thing: TinkerCad
+    - thing: 3D Printing
+
+- name: Predictive Analytics Tools
+  tag: Data · AI
+  description: Built predictive-analytics experiments to find structure within messy, real-world data — strengthening fundamentals in Pandas, NumPy, and Matplotlib while learning to turn data into evidence-based decisions.
+  used:
+    - thing: Python
+    - thing: Pandas
+    - thing: NumPy
+    - thing: Matplotlib

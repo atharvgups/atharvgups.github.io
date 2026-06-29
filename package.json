@@ -1,19 +1,19 @@
 {
-  "name": "brittanychiang.com",
-  "version": "0.0.0",
-  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "name": "atharvgups.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Atharv Gupta — builder, founder, and aspiring AI entrepreneur.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
+    "url": "https://github.com/atharvgups/atharvgups.github.io"
   },
-  "homepage": "https://github.com/bchiang7/bchiang7.github.io",
+  "homepage": "https://atharvgups.github.io/",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve --watch",
     "build": "gulp build"
   },
-  "author": "Brittany Chiang",
-  "license": "ISC",
+  "author": "Atharv Gupta",
+  "license": "MIT",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
     "browser-sync": "^2.26.7",

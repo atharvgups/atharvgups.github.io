@@ -1,44 +1,44 @@
-- company: Upstatement
-  url: https://www.upstatement.com/
-  time: May 2018 - Present
-  position: Engineer
+- org: JLHS Hack Club
+  role: Founder & President
+  time: 2024 — 2026
+  points:
+    - Founded and grew a high school technology club to 30+ active members through presentations, outreach, and peer networking.
+    - Organized weekly workshops on Python, Raspberry Pi, and robotics, coordinating guest speakers to keep engagement and attendance growing.
+    - Built long-term momentum by developing outreach messaging and pitching the club directly to classmates.
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2018
-  position: Studio Developer
+- org: Nike Golf Camp
+  role: Instructor
+  time: Summer 2024
+  points:
+    - Led daily coaching for groups of young athletes, adapting communication styles to a wide range of skill levels.
+    - Built trust with parents and campers through clear progress updates and individualized feedback.
+    - Thrived in a fast-paced team environment where professionalism, energy, and consistency were expected every day.
 
-- company: Apple Music
-  url: https://www.apple.com/music/
-  time: July - Dec 2017
-  position: UI Engineer Co-op
+- org: Inclusive Innovators Club
+  role: Team Lead
+  time: 2023 — 2024
+  points:
+    - Led a student team designing 3D-printed adaptive toys for children with disabilities.
+    - Designed custom parts in TinkerCad and Autodesk Fusion 360, cutting adaptation costs by ~50%.
+    - Partnered with local schools to donate finished toys and run hands-on 3D-printing demos.
 
-- company: Scout
-  url: https://web.northeastern.edu/scout/
-  time: Jan - June 2017
-  position: Studio Developer
+- org: Maker Faire
+  role: Booth Host
+  time: 2024
+  points:
+    - Demonstrated electronics and circuit-design projects to thousands of attendees.
+    - Created hands-on learning experiences with breadboards and LEDs, sparking younger visitors' interest in STEM.
 
-- company: Starry
-  url: https://starry.com/
-  time: July - Dec 2016
-  position: Software Engineer Co-op
+- org: Outdoors Club
+  role: President
+  time: 2022 — 2024
+  points:
+    - Organized hiking trips and outdoor excursions to promote environmental awareness across the student body.
+    - Encouraged leadership and teamwork by planning group activities in natural settings.
 
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Jan - May 2016
-  position: HCI Teaching Assistant
-
-- company: NU Women in Tech
-  url: http://nuwit.ccs.neu.edu/
-  time: Jan 2016 - May 2017
-  position: President & Web Chair
-
-- company: MullenLowe U.S.
-  url: https://us.mullenlowe.com/
-  time: July - Dec 2015
-  position: Creative Technologist Co-op
-
-- company: Northeastern University
-  url: http://www.ccis.northeastern.edu/
-  time: Mar - May 2015
-  position: HCI Research Assistant
+- org: C.R. Leaf Stone Garden
+  role: Builder
+  time: 2022 — 2024
+  points:
+    - Constructed a dome greenhouse with a hydroponics system to grow strawberries and lettuce.
+    - Gained practical insight into sustainable agriculture and environmental design.

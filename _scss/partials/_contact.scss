@@ -1,0 +1,27 @@
+.contact {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 130px 0 60px;
+  @include tablet { padding: 90px 0 40px; }
+
+  &__eyebrow {
+    font-family: $font-mono;
+    color: var(--accent);
+    font-size: 0.95rem;
+  }
+
+  &__title {
+    font-size: #{"clamp(2.2rem, 7vw, 3.4rem)"};
+    margin: 14px 0 0;
+    letter-spacing: -1px;
+  }
+
+  &__text {
+    color: var(--muted);
+    margin: 18px auto 36px;
+    font-size: 1.05rem;
+  }
+
+  &__btn { padding: 16px 34px; }
+}
