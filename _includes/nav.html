@@ -1,0 +1,27 @@
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand" aria-label="Atharv Gupta — home">
+      <span class="nav__brand-mark">AG</span>
+      <span class="nav__brand-name">Atharv Gupta</span>
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Primary">
+      <a href="#about"><span class="nav__num">01.</span> About</a>
+      <a href="#experience"><span class="nav__num">02.</span> Experience</a>
+      <a href="#projects"><span class="nav__num">03.</span> Projects</a>
+      <a href="#contact"><span class="nav__num">04.</span> Contact</a>
+      <a href="{{ site.linkedin }}" class="nav__cta" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+      </button>
+      <button class="nav__burger" id="nav-burger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav__overlay" id="nav-overlay"></div>

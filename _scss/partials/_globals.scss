@@ -1,88 +1,32 @@
-// Colors
-$night: #171c28;
-$black: #36363c;
-$dark-grey: #444452;
-$grey: #777777;
-$blue: #007bff;
-$slate: #afafbf;
-$off-white: #e7e7e7;
-$white: #ffffff;
-$green: #bae67e;
-$purple: #7d0ce8;
-$red: #ff0000;
-$orange: #e8850c;
-$yellow: #ffdc00;
-$accent: #ffcc66;
-// Fonts
-$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
-  BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-$Apercu: 'Apercu', $font-stack;
-// Media queries
-$fifteen-inch: 1440px;
-$thirteen-inch: 1280px;
-$desktop-width: 1024px;
-$little-desktop: 850px;
-$tablet-width: 768px;
-$weird-not-tablet-width: 630px;
-$phablet-width: 550px;
-$mobile-width: 480px;
-$small-mobile-width: 360px;
-$tiny-mobile-width: 330px;
+// ===== Fonts =====
+$font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, Helvetica, Arial, sans-serif;
+$font-display: 'Space Grotesk', $font-body;
+$font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
 
-@mixin transition {
-  transition: all 0.2s ease-in-out;
-}
+// ===== Layout =====
+$max-width: 1100px;
+$nav-height: 76px;
 
-@mixin thirteen {
-  @media screen and (max-width: #{$thirteen-inch}) {
-    @content;
-  }
-}
+// ===== Breakpoints =====
+$desktop: 1024px;
+$tablet: 768px;
+$phablet: 600px;
+$mobile: 480px;
 
 @mixin desktop {
-  @media screen and (max-width: #{$desktop-width}) {
-    @content;
-  }
+  @media screen and (max-width: #{$desktop}) { @content; }
 }
-
-@mixin little-desktop {
-  @media screen and (max-width: #{$little-desktop}) {
-    @content;
-  }
-}
-
 @mixin tablet {
-  @media screen and (max-width: #{$tablet-width}) {
-    @content;
-  }
+  @media screen and (max-width: #{$tablet}) { @content; }
 }
-
-@mixin weird-medium {
-  @media screen and (max-width: #{$weird-not-tablet-width}) {
-    @content;
-  }
-}
-
 @mixin phablet {
-  @media screen and (max-width: #{$phablet-width}) {
-    @content;
-  }
+  @media screen and (max-width: #{$phablet}) { @content; }
 }
-
 @mixin mobile {
-  @media screen and (max-width: #{$mobile-width}) {
-    @content;
-  }
+  @media screen and (max-width: #{$mobile}) { @content; }
 }
 
-@mixin small-mobile {
-  @media screen and (max-width: #{$small-mobile-width}) {
-    @content;
-  }
-}
-
-@mixin tiny-mobile {
-  @media screen and (max-width: #{$tiny-mobile-width}) {
-    @content;
-  }
+@mixin ease($props: all, $time: 0.25s) {
+  transition: $props $time cubic-bezier(0.645, 0.045, 0.355, 1);
 }

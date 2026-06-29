@@ -1,33 +1,31 @@
-languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
-  - item: HTML
-  - item: CSS/Sass
-  - item: Python
-  - item: SQL
-  - item: R
+groups:
+  - label: Languages
+    items:
+      - Python
+      - Java
+      - C++
+      - SQL
 
-frameworks:
-  - item: Ember & Glimmer
-  - item: React
-  - item: Jekyll
-  - item: Node
-  - item: D3
-  - item: Wordpress
-  - item: Timber
+  - label: AI / ML
+    items:
+      - PyTorch
+      - TensorFlow
+      - Pandas
+      - NumPy
+      - Matplotlib
 
-tools:
-  - item: Bash
-  - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
-  - item: Postman
-  - item: MongoDB
+  - label: Build & Hardware
+    items:
+      - Raspberry Pi
+      - Fusion 360
+      - TinkerCad
+      - 3D Printing
+      - Bash / zsh
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+  - label: Strengths
+    items:
+      - Leadership
+      - Public Speaking
+      - Relationship Building
+      - Sales & Outreach
+      - Mentoring

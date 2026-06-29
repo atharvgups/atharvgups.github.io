@@ -1,0 +1,25 @@
+<section class="section projects reveal" id="projects">
+  <div class="section__head">
+    <span class="section__num">03.</span>
+    <h2 class="section__title">Things I've built</h2>
+    <span class="section__rule"></span>
+  </div>
+
+  <div class="projects__grid">
+    {% for project in site.data.projects %}
+    <article class="card">
+      <div class="card__top">
+        <span class="card__icon" aria-hidden="true">&#9671;</span>
+        <span class="card__tag">{{ project.tag }}</span>
+      </div>
+      <h3 class="card__title">{{ project.name }}</h3>
+      <p class="card__desc">{{ project.description }}</p>
+      <ul class="card__tech">
+        {% for t in project.used %}
+        <li>{{ t.thing }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    {% endfor %}
+  </div>
+</section>

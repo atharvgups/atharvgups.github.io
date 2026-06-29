@@ -1,25 +1,44 @@
-.skills {
-  .skillz {
-    display: flex;
-    justify-content: space-between;
-    @include weird-medium {
-      flex-wrap: wrap;
-    }
-    &__category {
-      @include weird-medium {
-        width: 47%;
-        margin-right: 5px;
-        margin-bottom: 25px;
-      }
-      &__label {
-        font-weight: 700;
-        color: $black;
-        text-transform: uppercase;
-      }
-      &__item {
-        margin: 3px 0;
-        font-size: 0.9rem;
-      }
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  @include desktop { grid-template-columns: repeat(2, 1fr); }
+  @include mobile { grid-template-columns: 1fr; }
+}
+
+.skill-group {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 22px;
+  @include ease(all, 0.22s);
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow);
+  }
+
+  &__label {
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  &__items li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 9px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    &:last-child { margin-bottom: 0; }
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
     }
   }
 }

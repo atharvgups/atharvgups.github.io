@@ -1,0 +1,65 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: $nav-height 0 60px;
+
+  &__inner {
+    max-width: 760px;
+  }
+
+  &__eyebrow {
+    font-family: $font-mono;
+    color: var(--accent);
+    font-size: 1rem;
+    margin: 0 0 22px;
+  }
+
+  &__name {
+    font-size: #{"clamp(2.8rem, 9vw, 5.2rem)"};
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin: 0;
+    background: linear-gradient(120deg, var(--text-strong) 30%, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__tagline {
+    font-size: #{"clamp(1.6rem, 6vw, 3.1rem)"};
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: -1px;
+    margin: 6px 0 0;
+  }
+
+  &__lede {
+    max-width: 600px;
+    margin: 28px 0 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 26px;
+    margin-top: 46px;
+    li a {
+      font-family: $font-mono;
+      font-size: 0.9rem;
+      color: var(--muted);
+      position: relative;
+      &:hover { color: var(--accent); transform: translateY(-2px); }
+      @include ease(all, 0.2s);
+      display: inline-block;
+    }
+  }
+}

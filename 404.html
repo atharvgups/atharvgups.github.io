@@ -3,8 +3,9 @@ layout: not_found
 title: 404
 permalink: /404.html
 ---
-{% include switch.html %}
-<div class="name">Brittany Chiang</div>
-<img src="{{site.baseurl}}/img/emojis/thinking-face.png" alt="">
-<h1>Hmmm...</h1>
-<h2>Looks like there's nothing here.<br>Maybe you should go back <a href="{{site.url}}">home</a>.</h2>
+<div class="nf">
+  <p class="nf__code">404</p>
+  <h1 class="nf__title">This page wandered off.</h1>
+  <p class="nf__text">There's nothing here — but there's plenty back home.</p>
+  <a class="btn btn--primary" href="{{ site.url }}{{ site.baseurl }}/">Take me home</a>
+</div>

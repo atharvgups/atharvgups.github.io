@@ -1,20 +1,26 @@
-<section class="section experience">
-  <div class="section__title">Experience</div>
-  <div class="section__content">
-    <div class="jobs">
-      {% for job in site.data.experience %}
-      <div class="job">
-        <div class="time-place">
-          <div class="job__company">
-            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
-          </div>
-          <div class="job__time">{{job.time}}</div>
-        </div>
-        <div class="job__position">{{job.position}}</div>
-      </div>
-      {% endfor %}
-    </div>
+<section class="section experience reveal" id="experience">
+  <div class="section__head">
+    <span class="section__num">02.</span>
+    <h2 class="section__title">Experience &amp; leadership</h2>
+    <span class="section__rule"></span>
+  </div>
 
-    <a href="{{site.resume}}" target="_blank" class="arrow-link">View My Resume</a>
+  <div class="timeline">
+    {% for job in site.data.experience %}
+    <article class="tl-item">
+      <div class="tl-item__marker" aria-hidden="true"></div>
+      <div class="tl-item__body">
+        <div class="tl-item__top">
+          <h3 class="tl-item__role">{{ job.role }} <span class="tl-item__at">· {{ job.org }}</span></h3>
+          <span class="tl-item__time">{{ job.time }}</span>
+        </div>
+        <ul class="tl-item__points">
+          {% for point in job.points %}
+          <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+    {% endfor %}
   </div>
 </section>
