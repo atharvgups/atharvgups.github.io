@@ -1,13 +1,13 @@
 # Site settings
 name: Atharv Gupta
-title: Atharv Gupta | [Not-So]-Average
-description: I"'"m Atharv Gupta, a [not-so]-average teen who loves everything music & sports-related. I also like working out! 
+title: Atharv Gupta
+description: "Atharv Gupta is a student at UC Irvine who builds with AI, leads teams, and turns curiosity into projects people can actually use."
 url: https://atharvgups.github.io/
 baseurl: ''
 email: atharvgups@gmail.com
 resume: /files/Atharv_Gupta_Resume.pdf
 cover: https://atharvgups.github.io/img/og.png
-logo: https://atharvgups.github.io/img/logo.png
+logo: https://atharvgups.github.io/img/logo.svg
 social:
   - title: email
     url: mailto:atharvgups@gmail.com
