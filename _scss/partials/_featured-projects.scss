@@ -1,73 +1,61 @@
 .featured-projects {
-  a:after {
-    display: none;
-  }
   .project {
-    display: flex;
-    margin-bottom: 100px;
-    margin-left: -5%;
-    width: 125%;
-    @include thirteen {
-      width: 115%;
-    }
-    @include desktop {
-      width: 105%;
-    }
-    @include tablet {
-      width: 100%;
-      display: block;
-      margin-bottom: 70px;
-    }
-    &.screentime {
-      margin-bottom: 70px;
-    }
+    margin-bottom: 56px;
     &:last-of-type {
       margin-bottom: 0;
     }
     &__pic {
-      max-width: 700px;
-      overflow: visible;
-      margin: 0;
+      margin: 0 0 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-soft);
+      box-shadow: var(--shadow);
       a {
         display: block;
       }
-      &.phones {
-        a {
-          display: flex;
-          justify-content: space-between;
-        }
-        .phone {
-          margin: 0 -7%;
-          &:first-of-type {
-            margin-left: -5%;
-          }
-        }
-      }
       img {
         width: 100%;
-        max-width:100%;
         vertical-align: bottom;
+        @include transition;
+      }
+      &:hover img {
+        transform: scale(1.02);
+      }
+      &.phones {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        a {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+        .phone {
+          flex: 1;
+          max-width: 33%;
+        }
       }
     }
     &__caption {
-      width: 125px;
-      flex-shrink: 0;
-      margin-left: 30px;
-      @include tablet {
-        width: 100%;
-        margin-top: 25px;
-        margin-left: 0;
+      .project__name {
+        margin-bottom: 8px;
+        a {
+          font-family: $serif;
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: var(--heading);
+          &:hover {
+            color: var(--accent);
+          }
+        }
       }
-    }
-    &__name {
-      margin-bottom: 10px;
-      a {
-        font-weight: 700;
+      p {
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0;
       }
-    }
-    p {
-      font-size: 0.85rem;
-      line-height: 1.3;
     }
   }
 }

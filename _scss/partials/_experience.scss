@@ -1,32 +1,39 @@
 .experience {
   .jobs {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   .job {
-    margin-bottom: 25px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    &:first-child {
+      padding-top: 0;
+    }
     .time-place {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       @include mobile {
         display: block;
       }
     }
     &__company {
-      font-weight: 700;
-    }
-    &__time {
-      font-size: 0.9rem;
-      font-family: 'Inconsolata', monospace;
-      @include mobile {
-        font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--heading);
+      a:hover {
+        color: var(--accent);
       }
     }
-  }
-  .arrow-link {
-    font-size: 1.25rem;
-    &:after {
-      width: 20px;
-      height: 20px;
+    &__time {
+      font-size: 0.82rem;
+      font-family: $mono;
+      color: var(--muted);
+      @include mobile {
+        font-size: 0.78rem;
+      }
+    }
+    &__position {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
   }
 }

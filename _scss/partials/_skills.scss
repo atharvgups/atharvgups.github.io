@@ -1,24 +1,28 @@
 .skills {
   .skillz {
-    display: flex;
-    justify-content: space-between;
-    @include weird-medium {
-      flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 24px;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include small-mobile {
+      grid-template-columns: 1fr;
     }
     &__category {
-      @include weird-medium {
-        width: 47%;
-        margin-right: 5px;
-        margin-bottom: 25px;
-      }
       &__label {
-        font-weight: 700;
-        color: $black;
+        font-family: $mono;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 12px;
       }
       &__item {
-        margin: 3px 0;
-        font-size: 0.9rem;
+        margin: 6px 0;
+        font-size: 0.95rem;
+        color: var(--text);
       }
     }
   }
