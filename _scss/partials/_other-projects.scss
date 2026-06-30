@@ -20,9 +20,11 @@
     }
     &__name {
       margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--heading);
       a {
         font-weight: 600;
-        font-size: 1.05rem;
         color: var(--heading);
       }
     }

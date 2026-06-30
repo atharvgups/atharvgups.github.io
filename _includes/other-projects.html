@@ -1,10 +1,14 @@
 <section class="section other-projects">
-  <div class="section__title"><span class="emoji-icon">🗂️</span>Other Projects</div>
+  <div class="section__title"><span class="emoji-icon">💡</span>Projects</div>
   <div class="section__content">
     {% for project in site.data.other-projects %}
     <div class="project">
       <div class="project__name">
+        {% if project.url and project.url != '' %}
         <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
+        {% else %}
+        {{project.name}}
+        {% endif %}
       </div>
       <p>{{project.description}}</p>
       <div class="project__used">
