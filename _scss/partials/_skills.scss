@@ -2,7 +2,7 @@
   .skillz {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px 24px;
+    gap: 30px 22px;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -11,17 +11,17 @@
     }
     &__category {
       &__label {
-        font-family: $mono;
-        font-size: 0.7rem;
-        font-weight: 500;
-        letter-spacing: 0.12em;
+        font-family: $sans;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--muted);
         margin-bottom: 12px;
       }
       &__item {
         margin: 6px 0;
-        font-size: 0.95rem;
+        font-size: 1rem;
         color: var(--text);
       }
     }

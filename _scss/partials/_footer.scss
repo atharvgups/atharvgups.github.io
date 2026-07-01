@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 0 56px;
+  padding: 38px 0 54px;
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,8 @@
     text-align: center;
   }
   &__copyright {
-    font-size: 0.85rem;
+    font-family: $sans;
+    font-size: 0.88rem;
     color: var(--muted);
     .top {
       display: none;
@@ -20,23 +21,23 @@
       color: var(--heading);
     }
     .emoji {
-      width: 16px;
-      height: 16px;
-      margin: 0 4px;
+      width: 18px;
+      height: 18px;
+      margin: 0 5px;
       vertical-align: text-bottom;
     }
   }
   &__links {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 20px;
     @include weird-medium {
       justify-content: center;
     }
     a {
-      position: relative;
-      font-family: $mono;
+      font-family: $sans;
       font-size: 0.78rem;
+      font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--muted);
