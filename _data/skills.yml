@@ -2,26 +2,36 @@ languages:
   - item: Python
   - item: Java
   - item: C++
+  - item: JavaScript
   - item: SQL
+  - item: HTML/CSS
 
 ml:
   - item: PyTorch
   - item: TensorFlow
+  - item: scikit-learn
+  - item: Keras
   - item: Pandas
   - item: NumPy
   - item: Matplotlib
+  - item: OpenCV
 
 tools:
   - item: Raspberry Pi
+  - item: Arduino
   - item: Fusion 360
   - item: TinkerCad
   - item: 3D Printing
   - item: Git & GitHub
+  - item: Linux
   - item: Bash / zsh
 
 strengths:
   - item: Leadership
   - item: Public Speaking
   - item: Mentoring
+  - item: Team Building
+  - item: Relationship Building
+  - item: Presentation
   - item: Problem Solving
   - item: Adaptability
