@@ -422,6 +422,10 @@ strong {
   margin-left: 0.14em;
   vertical-align: -0.08em;
 }
+.intro__greeting {
+  display: block;
+  margin-bottom: 0.35em;
+}
 .intro__cta {
   display: flex;
   align-items: center;

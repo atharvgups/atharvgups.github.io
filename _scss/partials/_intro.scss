@@ -36,6 +36,11 @@
     }
   }
 
+  &__greeting {
+    display: block;
+    margin-bottom: 0.35em;
+  }
+
   &__cta {
     display: flex;
     align-items: center;
