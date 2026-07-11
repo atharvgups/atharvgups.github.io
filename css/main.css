@@ -17,7 +17,7 @@
   --shadow-soft: 0 4px 18px -8px rgba(60, 50, 30, 0.22);
 }
 
-body.night {
+html.night {
   --bg: #1b1916;
   --bg-soft: #26231f;
   --text: #cfc9bd;
@@ -64,11 +64,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.night .switch-wrapper .sun {
+html.night .switch-wrapper .sun {
   background: url("../img/switch/sun-white.svg") no-repeat center;
   background-size: 100%;
 }
-body.night .switch-wrapper .moon {
+html.night .switch-wrapper .moon {
   background: url("../img/switch/moon-white.svg") no-repeat center;
   background-size: 100%;
 }
@@ -308,6 +308,16 @@ strong {
   border-color: var(--accent);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .switch-wrapper {
   display: flex;
   justify-content: center;
@@ -375,6 +385,16 @@ strong {
   border-radius: 100%;
 }
 
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .intro {
   padding: 118px 0 78px;
   text-align: center;
@@ -392,6 +412,7 @@ strong {
 .intro__tagline {
   font-family: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
   font-weight: 800;
+  animation: heroFadeUp 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   font-size: 2.85rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -432,6 +453,7 @@ strong {
   justify-content: center;
   gap: 26px;
   flex-wrap: wrap;
+  animation: heroFadeUp 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 0.12s both;
 }
 .intro__resume {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -617,6 +639,12 @@ strong {
   .other-projects .section__content {
     grid-template-columns: 1fr;
   }
+}
+.other-projects .projects__more {
+  grid-column: 1/-1;
+  justify-self: start;
+  margin-top: 4px;
+  font-size: 1.02rem;
 }
 .other-projects .project {
   padding: 26px;

@@ -7,6 +7,12 @@
       grid-template-columns: 1fr;
     }
   }
+  .projects__more {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-top: 4px;
+    font-size: 1.02rem;
+  }
   .project {
     padding: 26px;
     border: 1px solid var(--card-border);

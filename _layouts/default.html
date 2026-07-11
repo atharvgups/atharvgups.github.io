@@ -2,9 +2,20 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   {% include head.html %}
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        var h = new Date().getHours();
+        var night = t === 'night' ||
+          (t !== 'light' && ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) || h >= 19 || h <= 7));
+        if (night) document.documentElement.classList.add('night');
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   {{ content }}

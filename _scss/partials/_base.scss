@@ -16,7 +16,7 @@
   --shadow-soft: 0 4px 18px -8px rgba(60, 50, 30, 0.22);
 }
 
-body.night {
+html.night {
   --bg: #1b1916;
   --bg-soft: #26231f;
   --text: #cfc9bd;
@@ -63,7 +63,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.night {
+html.night {
   .switch-wrapper {
     .sun {
       background: url('../img/switch/sun-white.svg') no-repeat center;
@@ -302,5 +302,16 @@ strong {
   &:focus {
     transform: translateY(-4px);
     border-color: var(--accent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }
