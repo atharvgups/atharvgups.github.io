@@ -15,8 +15,6 @@ social:
     url: https://www.linkedin.com/in/gupta-atharv/
   - title: github
     url: https://github.com/atharvgups
-  - title: articles
-    url: https://medium.com/@atharvgups
 
 # Build settings
 markdown: kramdown

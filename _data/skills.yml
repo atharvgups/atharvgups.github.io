@@ -3,6 +3,7 @@ languages:
   - item: Java
   - item: C++
   - item: JavaScript
+  - item: TypeScript
   - item: SQL
   - item: HTML/CSS
 
@@ -13,7 +14,6 @@ ml:
   - item: Keras
   - item: Pandas
   - item: NumPy
-  - item: Matplotlib
   - item: OpenCV
 
 tools:
@@ -24,14 +24,12 @@ tools:
   - item: 3D Printing
   - item: Git & GitHub
   - item: Linux
-  - item: Bash / zsh
 
 strengths:
   - item: Leadership
   - item: Public Speaking
   - item: Mentoring
   - item: Team Building
-  - item: Relationship Building
-  - item: Presentation
   - item: Problem Solving
+  - item: Presentation
   - item: Adaptability
