@@ -1,3 +1,10 @@
+- name: Zot Eats
+  url: ''
+  description: A dining companion for UC Irvine students that makes it easy to see what's worth eating on campus, from dining hall menus to hidden gems nearby.
+  used:
+    - thing: Swift
+    - thing: UCI
+
 - name: Morsel
   url: https://github.com/atharvgups/calorietracker
   description: A calorie tracker that feels like a conversation instead of a spreadsheet. You tell an AI agent what you ate in plain language and it handles the nutrition lookup, logs the entry, and generates studio-style photos of every meal.
