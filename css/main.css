@@ -723,7 +723,7 @@ strong {
   height: 18px;
   margin: 0 5px;
   vertical-align: text-bottom;
-  transition: transform 1.4s ease-in-out;
+  transition: transform 0.9s cubic-bezier(0.45, 0.05, 0.35, 1.08);
 }
 .footer__copyright .emoji:hover {
   transform: rotate(360deg);
