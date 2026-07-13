@@ -1,3 +1,44 @@
+- name: Morsel
+  url: https://github.com/atharvgups/calorietracker
+  description: A calorie tracker that feels like a conversation instead of a spreadsheet. You tell an AI agent what you ate in plain language and it handles the nutrition lookup, logs the entry, and generates studio-style photos of every meal.
+  used:
+    - thing: Swift
+    - thing: SwiftData
+    - thing: OpenAI
+    - thing: Gemini
+
+- name: Claude Graphics Skill
+  url: https://github.com/atharvgups/claude-graphics-skill
+  description: An editorial data-viz skill for Claude with 30 chart types sharing one consistent house aesthetic, so every chart it produces looks like it came from the same design team.
+  used:
+    - thing: Python
+    - thing: Data Viz
+    - thing: Claude
+
+- name: Adaptive Toys for Accessibility
+  url: ''
+  description: Designed and 3D-printed custom adaptive buttons that make toys usable for children with disabilities, cutting adaptation costs by about half and donating the results to local schools.
+  used:
+    - thing: Fusion 360
+    - thing: TinkerCad
+    - thing: 3D Printing
+
+- name: DockGlo
+  url: https://github.com/atharvgups/dockglo
+  description: A little macOS utility that beautifies the Dock, tracking clicks with Swift event taps and turning usage into stats.
+  used:
+    - thing: Swift
+    - thing: Python
+    - thing: macOS
+
+- name: Death Clock
+  url: https://github.com/atharvgups/death-clock
+  description: A memento-mori web app that visualizes the time you have left and what you spend it on, complete with an atmospheric cemetery scene.
+  used:
+    - thing: TypeScript
+    - thing: React
+    - thing: Tailwind
+
 - name: Plant Care Automation
   url: ''
   description: A Raspberry Pi system that monitors soil moisture and automates watering, keeping plants healthy with Python and a handful of sensors.
@@ -5,37 +46,10 @@
     - thing: Python
     - thing: Raspberry Pi
     - thing: IoT
-    - thing: Sensors
-
-- name: Adaptive Toys for Accessibility
-  url: ''
-  description: Designed and 3D-printed custom adaptive buttons that make toys usable for children with disabilities, cutting adaptation costs by ~50% and donating the results to local schools.
-  used:
-    - thing: Fusion 360
-    - thing: TinkerCad
-    - thing: 3D Printing
-
-- name: Image Recognition Models
-  url: ''
-  description: Built supervised and unsupervised learning projects for image classification, exploring data preprocessing and visualization to make the models more insightful.
-  used:
-    - thing: Python
-    - thing: PyTorch
-    - thing: NumPy
-    - thing: Pandas
-
-- name: Predictive Analytics Tools
-  url: ''
-  description: Created predictive analytics and image-recognition projects during an intensive AI bootcamp, strengthening my data workflow from preprocessing to evaluation.
-  used:
-    - thing: Python
-    - thing: Pandas
-    - thing: NumPy
-    - thing: Matplotlib
 
 - name: Hydroponic Dome Greenhouse
   url: ''
-  description: Constructed a geodesic dome greenhouse with a hydroponics system to grow strawberries and lettuce, learning the ins and outs of sustainable agriculture and environmental design.
+  description: Constructed a geodesic dome greenhouse with a hydroponics system to grow strawberries and lettuce, learning sustainable agriculture hands-on.
   used:
     - thing: Hydroponics
     - thing: Sustainable Design
@@ -45,5 +59,4 @@
   description: Hosted an interactive booth where thousands of attendees learned circuit design hands-on with breadboards and LEDs.
   used:
     - thing: Circuit Design
-    - thing: Breadboards
     - thing: Electronics
