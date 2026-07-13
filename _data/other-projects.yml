@@ -60,10 +60,3 @@
   used:
     - thing: Hydroponics
     - thing: Sustainable Design
-
-- name: Maker Faire Electronics Booth
-  url: ''
-  description: Hosted an interactive booth where thousands of attendees learned circuit design hands-on with breadboards and LEDs.
-  used:
-    - thing: Circuit Design
-    - thing: Electronics

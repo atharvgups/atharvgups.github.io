@@ -647,6 +647,8 @@ strong {
   font-size: 1.02rem;
 }
 .other-projects .project {
+  display: flex;
+  flex-direction: column;
   padding: 26px;
   border: 1px solid var(--card-border);
   border-radius: 18px;
@@ -679,6 +681,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  margin-top: auto;
 }
 .other-projects .project__used__item {
   display: inline-block;
