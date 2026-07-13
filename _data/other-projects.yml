@@ -3,7 +3,7 @@
   description: A dining companion for UC Irvine students that makes it easy to see what's worth eating on campus, from dining hall menus to hidden gems nearby.
   used:
     - thing: Swift
-    - thing: UCI
+    - thing: iOS
 
 - name: Morsel
   url: https://github.com/atharvgups/calorietracker
@@ -19,7 +19,7 @@
   description: An editorial data-viz skill for Claude with 30 chart types sharing one consistent house aesthetic, so every chart it produces looks like it came from the same design team.
   used:
     - thing: Python
-    - thing: Data Viz
+    - thing: Plotly
     - thing: Claude
 
 - name: Adaptive Toys for Accessibility
@@ -45,6 +45,7 @@
     - thing: TypeScript
     - thing: React
     - thing: Tailwind
+    - thing: Supabase
 
 - name: Plant Care Automation
   url: ''
