@@ -80,11 +80,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $display;
+  font-family: $sans;
   color: var(--heading);
   font-weight: 700;
   line-height: 1.08;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
@@ -143,9 +143,10 @@ strong {
     display: flex;
     align-items: center;
     gap: 16px;
-    font-family: $display;
-    font-size: 1.9rem;
+    font-family: $sans;
+    font-size: 1.8rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
     color: var(--heading);
     margin-bottom: 30px;
     @include mobile {
@@ -159,9 +160,9 @@ strong {
     border-radius: 50%;
     background: var(--heading);
     color: var(--bg);
-    font-family: $display;
+    font-family: $sans;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
     justify-content: center;
