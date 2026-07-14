@@ -680,11 +680,11 @@ strong {
   -webkit-mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
   mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
 }
-.other-projects .projects-marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
 .other-projects .marquee-col {
   overflow: hidden;
+}
+.other-projects .marquee-col:hover .marquee-track {
+  animation-play-state: paused;
 }
 .other-projects .marquee-track {
   will-change: transform;

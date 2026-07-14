@@ -7,12 +7,12 @@
     overflow: hidden;
     -webkit-mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
     mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
-    &:hover .marquee-track {
-      animation-play-state: paused;
-    }
   }
   .marquee-col {
     overflow: hidden;
+    &:hover .marquee-track {
+      animation-play-state: paused;
+    }
   }
   .marquee-track {
     will-change: transform;
