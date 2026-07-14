@@ -2,6 +2,7 @@
   .section__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
     gap: 22px;
     @include phablet {
       grid-template-columns: 1fr;
@@ -28,9 +29,10 @@
     }
     &__name {
       margin-bottom: 10px;
-      font-family: $display;
+      font-family: $sans;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
       color: var(--heading);
       a {
         font-weight: 600;

@@ -525,7 +525,7 @@ strong {
   }
 }
 .skills .skillz__category__label {
-  font-family: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -560,7 +560,7 @@ strong {
   }
 }
 .experience .job__company {
-  font-family: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 1.15rem;
   color: var(--heading);
@@ -633,6 +633,7 @@ strong {
 .other-projects .section__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: start;
   gap: 22px;
 }
 @media screen and (max-width: 550px) {
@@ -662,9 +663,10 @@ strong {
 }
 .other-projects .project__name {
   margin-bottom: 10px;
-  font-family: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
   color: var(--heading);
 }
 .other-projects .project__name a {
