@@ -1,0 +1,15 @@
+<div class="project">
+  <div class="project__name">
+    {% if include.project.url and include.project.url != '' %}
+    <a href="{{include.project.url}}" target="_blank" class="arrow-link">{{include.project.name}}</a>
+    {% else %}
+    {{include.project.name}}
+    {% endif %}
+  </div>
+  <p>{{include.project.description}}</p>
+  <div class="project__used">
+    {% for item in include.project.used %}
+    <span class="project__used__item">{{item.thing}}</span>
+    {% endfor %}
+  </div>
+</div>

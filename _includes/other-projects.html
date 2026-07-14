@@ -1,23 +1,28 @@
 <section class="section other-projects">
   <div class="section__title"><span class="section__num">4</span>Projects</div>
   <div class="section__content">
-    {% for project in site.data.other-projects %}
-    <div class="project">
-      <div class="project__name">
-        {% if project.url and project.url != '' %}
-        <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
-        {% else %}
-        {{project.name}}
-        {% endif %}
+    <div class="projects-marquee">
+      <div class="marquee-col">
+        <div class="marquee-track marquee-track--up">
+          <div class="marquee-set">
+            {% for project in site.data.other-projects limit: 4 %}{% include project-card.html project=project %}{% endfor %}
+          </div>
+          <div class="marquee-set marquee-set--dup" aria-hidden="true">
+            {% for project in site.data.other-projects limit: 4 %}{% include project-card.html project=project %}{% endfor %}
+          </div>
+        </div>
       </div>
-      <p>{{project.description}}</p>
-      <div class="project__used">
-        {% for item in project.used %}
-        <span class="project__used__item">{{item.thing}}</span>
-        {% endfor %}
+      <div class="marquee-col">
+        <div class="marquee-track marquee-track--down">
+          <div class="marquee-set">
+            {% for project in site.data.other-projects offset: 4 %}{% include project-card.html project=project %}{% endfor %}
+          </div>
+          <div class="marquee-set marquee-set--dup" aria-hidden="true">
+            {% for project in site.data.other-projects offset: 4 %}{% include project-card.html project=project %}{% endfor %}
+          </div>
+        </div>
       </div>
     </div>
-    {% endfor %}
     <a href="https://github.com/atharvgups" target="_blank" class="arrow-link projects__more">More on GitHub</a>
   </div>
 </section>

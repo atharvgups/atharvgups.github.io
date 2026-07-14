@@ -512,18 +512,25 @@ strong {
 
 .skills .skillz {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px 22px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
 }
-@media screen and (max-width: 768px) {
-  .skills .skillz {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 550px) {
   .skills .skillz {
     grid-template-columns: 1fr;
   }
+}
+.skills .skillz__category {
+  padding: 22px 24px;
+  background: var(--bg-soft);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.2s ease-in-out;
+}
+.skills .skillz__category:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
 }
 .skills .skillz__category__label {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -532,23 +539,48 @@ strong {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+.skills .skillz__category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .skills .skillz__category__item {
-  margin: 6px 0;
-  font-size: 1rem;
-  color: var(--text);
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 6px 13px;
+  border-radius: 100px;
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .experience .jobs {
-  margin-bottom: 34px;
+  position: relative;
+  margin: 6px 0 36px 6px;
+  padding-left: 30px;
+  border-left: 2px solid var(--border);
 }
 .experience .job {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
+  position: relative;
+  padding: 0 0 28px;
 }
-.experience .job:first-child {
-  padding-top: 0;
+.experience .job:last-child {
+  padding-bottom: 0;
+}
+.experience .job:before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
 }
 .experience .job .time-place {
   display: flex;
@@ -564,6 +596,7 @@ strong {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 1.15rem;
+  letter-spacing: -0.01em;
   color: var(--heading);
 }
 .experience .job__company a:hover {
@@ -572,11 +605,18 @@ strong {
 .experience .job__time {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.82rem;
+  font-weight: 500;
   color: var(--muted);
+  background: var(--bg-soft);
+  border: 1px solid var(--card-border);
+  border-radius: 100px;
+  padding: 3px 12px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 480px) {
   .experience .job__time {
-    font-size: 0.78rem;
+    display: inline-block;
+    margin-top: 4px;
   }
 }
 .experience .job__position {
@@ -631,21 +671,55 @@ strong {
   margin-left: 15px;
 }
 
-.other-projects .section__content {
+.other-projects .projects-marquee {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: start;
   gap: 22px;
+  height: 560px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
 }
-@media screen and (max-width: 550px) {
-  .other-projects .section__content {
-    grid-template-columns: 1fr;
+.other-projects .projects-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.other-projects .marquee-col {
+  overflow: hidden;
+}
+.other-projects .marquee-track {
+  will-change: transform;
+}
+.other-projects .marquee-track--up {
+  animation: marquee-up 42s linear infinite;
+}
+.other-projects .marquee-track--down {
+  animation: marquee-down 52s linear infinite;
+}
+.other-projects .marquee-set {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-bottom: 22px;
+}
+@keyframes marquee-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes marquee-down {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 .other-projects .projects__more {
-  grid-column: 1/-1;
-  justify-self: start;
-  margin-top: 4px;
+  display: inline-flex;
+  margin-top: 26px;
   font-size: 1.02rem;
 }
 .other-projects .project {
@@ -696,6 +770,46 @@ strong {
   border-radius: 100px;
   color: var(--accent);
   background: var(--accent-soft);
+}
+@media screen and (max-width: 550px) {
+  .other-projects .projects-marquee {
+    display: block;
+    height: auto;
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .other-projects .marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+  .other-projects .marquee-set {
+    padding-bottom: 0;
+    margin-bottom: 22px;
+  }
+  .other-projects .marquee-set--dup {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .other-projects .projects-marquee {
+    display: block;
+    height: auto;
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .other-projects .marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+  .other-projects .marquee-set {
+    padding-bottom: 0;
+    margin-bottom: 22px;
+  }
+  .other-projects .marquee-set--dup {
+    display: none;
+  }
 }
 
 .footer {

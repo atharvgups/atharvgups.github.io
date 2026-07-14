@@ -1,15 +1,22 @@
 .skills {
   .skillz {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 22px;
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include small-mobile {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    @include phablet {
       grid-template-columns: 1fr;
     }
     &__category {
+      padding: 22px 24px;
+      background: var(--bg-soft);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      box-shadow: var(--shadow-soft);
+      @include transition;
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+      }
       &__label {
         font-family: $sans;
         font-size: 0.72rem;
@@ -17,12 +24,23 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--muted);
-        margin-bottom: 12px;
+        margin-bottom: 14px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
       }
       &__item {
-        margin: 6px 0;
-        font-size: 1rem;
-        color: var(--text);
+        margin: 0;
+        font-family: $sans;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        padding: 6px 13px;
+        border-radius: 100px;
+        color: var(--accent);
+        background: var(--accent-soft);
       }
     }
   }

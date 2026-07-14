@@ -1,19 +1,58 @@
 .other-projects {
-  .section__content {
+  .projects-marquee {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: start;
     gap: 22px;
-    @include phablet {
-      grid-template-columns: 1fr;
+    height: 560px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
+    &:hover .marquee-track {
+      animation-play-state: paused;
     }
   }
+  .marquee-col {
+    overflow: hidden;
+  }
+  .marquee-track {
+    will-change: transform;
+    &--up {
+      animation: marquee-up 42s linear infinite;
+    }
+    &--down {
+      animation: marquee-down 52s linear infinite;
+    }
+  }
+  .marquee-set {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 22px;
+  }
+
+  @keyframes marquee-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50%);
+    }
+  }
+  @keyframes marquee-down {
+    from {
+      transform: translateY(-50%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
   .projects__more {
-    grid-column: 1 / -1;
-    justify-self: start;
-    margin-top: 4px;
+    display: inline-flex;
+    margin-top: 26px;
     font-size: 1.02rem;
   }
+
   .project {
     display: flex;
     flex-direction: column;
@@ -62,5 +101,33 @@
         background: var(--accent-soft);
       }
     }
+  }
+
+  // Static fallback: small screens and reduced motion get a plain stacked list
+  @mixin marquee-static {
+    .projects-marquee {
+      display: block;
+      height: auto;
+      overflow: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .marquee-track {
+      animation: none !important;
+      transform: none !important;
+    }
+    .marquee-set {
+      padding-bottom: 0;
+      margin-bottom: 22px;
+      &--dup {
+        display: none;
+      }
+    }
+  }
+  @include phablet {
+    @include marquee-static;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @include marquee-static;
   }
 }
