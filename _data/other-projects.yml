@@ -1,5 +1,5 @@
 - name: Zot Eats
-  url: ''
+  url: https://github.com/atharvgups/zoteats
   description: A dining companion for UC Irvine students that makes it easy to see what's worth eating on campus, from dining hall menus to hidden gems nearby.
   used:
     - thing: Swift
@@ -39,7 +39,7 @@
     - thing: macOS
 
 - name: Death Clock
-  url: https://github.com/atharvgups/death-clock
+  url: https://death-clock-ten.vercel.app
   description: A memento-mori web app that visualizes the time you have left and what you spend it on, complete with an atmospheric cemetery scene.
   used:
     - thing: TypeScript
